@@ -17,8 +17,12 @@ public class ByPhone {
     @FindBy(xpath = "//input[@id='target']")
     public WebElement полеВводаНомераТелефонаПолучателя;
 
-    @FindBy(xpath = "//span[contains(text(),'Продолжить')]")
+    @FindBy(css = "button[type='submit'] span")
     public WebElement кнопкаПродолжитьВПереводеПоНомеруТелефона1;
+
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/section[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]/span[1]")
+    public WebElement кнопкаПродолжитьВПереволеПоНомеруТелефона2;
+
 
     @FindBy(xpath = "//input[@id='amount']")
     public WebElement полеВводаСуммыВПереводеПоНомеруТелефона;

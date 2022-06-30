@@ -12,7 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
-public class PaymentsNAlymjanSteps {
+public class BetweenUAccNASteps {
 
     WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage();
@@ -26,7 +26,7 @@ public class PaymentsNAlymjanSteps {
     public void пользователь_в_тестовом_портале() {
         driver.get(ConfigReader.getProperty("environment"));
         Helper.sendKeys(homePage.полеВводаНомераТелефона, "999160199");
-        Helper.sendKeys(homePage.полеВводаПароля, "1313");
+        Helper.sendKeys(homePage.полеВводаПароля, "qwe123##");
         Helper.click(homePage.кнопкаВойти);
         Helper.pause(3000);
         Helper.click(majorPage.оплатить);
@@ -69,6 +69,8 @@ public class PaymentsNAlymjanSteps {
     public void кликнуть_на_продолжить() {
         Helper.click(betweenUserAccounts.кнопкаПродолжить);
         Helper.pause(3000);
+
+
     }
 
     @Then("нажать на кпопку перевести")
@@ -76,39 +78,6 @@ public class PaymentsNAlymjanSteps {
         Helper.click(betweenUserAccounts.кнопкапПеревести);
         Helper.pause(3000);
     }
-
-
-
-
-    // Scenario 2
-
-
-    @Given("кликнуть на перевести по номеру телефона")
-    public void кликнуть_на_перевести_по_номеру_телефона() {
-      Helper.click(byPhone.иконкаПереводаПоНомеруТелефона);
-    }
-    @Given("ввести номер телефона получателя")
-    public void ввести_номер_телефона_получателя() {
-     Helper.sendKeys(byPhone.полеВводаНомераТелефонаПолучателя,"700010105");
-    }
-    @Given("кликнуть на продолжить в переводе по номеру телефона")
-    public void кликнуть_на_продолжить_в_переводе_по_номеру_телефона() {
-      Helper.click(byPhone.кнопкаПродолжитьВПереводеПоНомеруТелефона1);
-    }
-    @Given("ввести сумму платежа")
-    public void ввести_сумму_платежа() {
-     Helper.sendKeys(byPhone.полеВводаСуммыВПереводеПоНомеруТелефона,"10");
-    }
-    @Given("кликнуть на продолжить после ввода суммы")
-    public void кликнуть_на_продолжить_после_ввода_суммы() {
-     Helper.click(byPhone.кнопкаПродолжитьВПереводеПоНомеруТелефона1);
-     Helper.pause(3000);
-    }
-//    @Given("кликнуть перевести в переводе по номеру телефона")
-//    public void кликнуть_перевести_в_переводе_по_номеру_телефона() {
-//
-//    }
-
 
 }
 

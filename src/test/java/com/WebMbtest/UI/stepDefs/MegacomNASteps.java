@@ -10,7 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 
-public class PaymentMegacomSteps {
+public class MegacomNASteps {
     WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage();
     MajorPage majorPage = new MajorPage();
@@ -23,7 +23,7 @@ public class PaymentMegacomSteps {
     public void пользователь_в_тестовом_портале_н_алымжана() {
         driver.get(ConfigReader.getProperty("environment"));
         Helper.sendKeys(homePage.полеВводаНомераТелефона, "999160199");
-        Helper.sendKeys(homePage.полеВводаПароля, "1313");
+        Helper.sendKeys(homePage.полеВводаПароля, "qwe123##");
         Helper.click(homePage.кнопкаВойти);
         Helper.pause(3000);
         Helper.click(majorPage.оплатить);

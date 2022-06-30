@@ -1,7 +1,6 @@
 package com.WebMbtest.UI.stepDefs;
 
 import com.WebMbTest.UI.dataProviders.ConfigReader;
-import com.WebMbTest.UI.methods.DropDownHelper;
 import com.WebMbTest.UI.methods.Helper;
 import com.WebMbTest.UI.pageObjectNAlymjan.BetweenUserAccounts;
 import com.WebMbTest.UI.pageObjectNAlymjan.ByPhone;
@@ -15,7 +14,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
-public class PupkinIvantestNalimitySteps {
+public class TestNalimitIvanSteps {
 
     WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage();

@@ -22,8 +22,8 @@ public class BetweenAccountsPupkinIvan {
 
     public WebElement сомовыйСчет1;
 
-    @FindBy(css = "div[class='ant-select-item ant-select-item-option ant-select-item-option-active'] div[class='product-select-item-title'] span")
 
+    @FindBy(xpath = "/html[1]/body[1]/div[1]/section[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]")
     public WebElement сомовыйСчет2;
 
     @FindBy(xpath = "/html[1]/body[1]/div[1]/section[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/button[1]")
